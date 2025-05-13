@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./input.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="child">
+            <div class="container">
+                <div class="title">
+                    <p class="time" style="width: 35px;" id="daycolorchange">DAY</p>
+                    <p class="time" id="monthcolorchange">MONTH</p>
+                    <p class="time" id="yearcolorchange">YEAR</p>
+                </div>
+                <div class="inputs">
+                    <input type="number" id="day" placeholder="DD">
+                    <input type="number" id="month" placeholder="MM">
+                    <input type="number" id="year" placeholder="YYYY">
+                </div>
+                <div class="Error">
+                    <p id="printday"></p>
+                    <p id="printmonth"></p>
+                    <p id="printyear"></p>
+                </div>
+            </div>
+            <div class="box">
+                <hr>
+                <button onclick="calculater()"><svg xmlns="http://www.w3.org/2000/svg" width="46" height="44"
+                        viewBox="0 0 46 44">
+                        <g fill="none" stroke="#FFF" stroke-width="2">
+                            <path
+                                d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44" />
+                        </g>
+                    </svg>
+
+                </button>
+            </div>
+            <div class="wrapper">
+                <p class="wrapperChild"><span id="thespan">--</span>years</p>
+                <p class="wrapperChild"><span id="thespanm">--</span>months</p>
+                <p class="wrapperChild"><span id="thespand">--</span>days</p>
+            </div>
+        </div>
+    </div>
+    <script src="./javascript.js"></script>
+</body>
+
+</html>
