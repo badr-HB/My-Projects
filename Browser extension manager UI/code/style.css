@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #EDF5FF;
+}
+
+/* header */
+header {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.header_child {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 75%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.click_moon {
+    padding: 8px;
+    border-radius: 13px;
+    cursor: pointer;
+}
+
+/* main */
+main {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.Parent {
+    display: flex;
+    align-items: center;
+    width: 75%;
+    justify-content: space-between;
+}
+
+.child {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.text {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    color: #0A2540;
+    font-size: 26px;
+}
+
+.btn {
+    background-color: white;
+    border: transparent;
+    border-radius: 12px;
+    padding: 8px;
+    cursor: pointer;
+    font-family: "Noto Sans", sans-serif;
+}
+
+.btn:hover {
+    background-color: hsl(3, 77%, 44%) ;
+    color: whitesmoke;
+}
+
+.Blocks {
+    width: 75%;
+    height: 745px;
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-template-rows: 25% 25% 25% 25%;
+    margin-top: 25px;
+    gap: 12px;
+}
+
+.container {
+    width: 98%;
+    background-color: white;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.box1 {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.box2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 37px;
+}
+
+.CountainerText {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #0A2540;
+}
+
+.CountainerParagraph {
+    font-family: "Noto Sans", sans-serif;
+    color: gray;
+}
+
+.BoxBtn {
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 12px;
+    padding: 5px;
+    cursor: pointer;
+    font-family: "Noto Sans", sans-serif;
+}
+.BoxBtn:hover {
+    background-color: hsl(3, 77%, 44%);
+    color: whitesmoke;
+}
+
+input[type='checkbox']{
+    position: relative;
+    -webkit-appearance: none;
+    width: 80px;
+    height: 40px;
+    background-color: hsl(0, 0%, 78%);
+    outline: none;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+input:checked[type='checkbox']{
+    background: hsl(3, 77%, 44%);
+}
+input[type="checkbox"]::before{
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: white;
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+input:checked[type='checkbox']::before{
+    left: 40px;
+}

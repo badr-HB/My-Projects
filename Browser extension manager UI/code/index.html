@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_responsive.css ">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="header_child">
+            <img src="../browser-extensions-manager-ui-main/assets/images/logo.svg" alt="">
+            <button id='change' onclick="darkmode()" class="click_moon"><img src="../browser-extensions-manager-ui-main/assets/images/icon-moon.svg"
+                    alt=""></button>
+        </div>
+    </header>
+    <main>
+        <div class="Parent">
+            <p class="text">Extension List</p>
+            <div class="child">
+                <button class="btn" onclick="ShowAll()">All</button>
+                <button class="btn" onclick="ShowActive()">Active</button>
+                <button class="btn" onclick="ShowInaActive()">Inactive</button>
+            </div>
+        </div>
+        <!-------------------------------------------------------------------------------------------------->
+        <div class="Blocks">
+            <div class="container">
+                <div class="box1">
+                    <img src="../browser-extensions-manager-ui-main/assets/images/logo-devlens.svg" alt="">
+                    <div>
+                        <p class="CountainerText">Develens</p>
+                        <p class="CountainerParagraph">Quickly inspect page layouts and visualize element boundaries.
+                        </p>
+                    </div>
+                </div>
+                <div class="box2">
+                    <button class="BoxBtn" onclick="deleteit(this)">Remove</button>
+                    <input type="checkbox" class="checkme" onclick="checking(this)">
+                </div>
+            </div>
+            <!--2------------------------------------------------------------->
+            <div class="container">
+                <div class="box1">
+                    <img src="../browser-extensions-manager-ui-main/assets/images/logo-style-spy.svg" alt="">
+                    <div>
+                        <p class="CountainerText">StyleSpy</p>
+                        <p class="CountainerParagraph">Instantly analyze and copy CSS from any webpage element.
+                        </p>
+                    </div>
+                </div>
+                <div class="box2">
+                    <button class="BoxBtn" onclick="deleteit(this)">Remove</button>
+                    <input type="checkbox" class="checkme" onclick="checking(this)">
+                </div>
+            </div>
+            <!--3-->
+            <div class="container">
+                <div class="box1">
+                    <img src="../browser-extensions-manager-ui-main/assets/images/logo-speed-boost.svg" alt="">
+                    <div>
+                        <p class="CountainerText">SpeedBoost</p>
+                        <p class="CountainerParagraph">Optimizes browser resource usage to accelerate page loading.
+                        </p>
+                    </div>
+                </div>
+                <div class="box2">
+                    <button class="BoxBtn" onclick="deleteit(this)">Remove</button>
+                    <input type="checkbox" class="checkme" onclick="checking(this)">
+                </div>
+            </div>
+            <!--4-->
+            <div class="container">
+                <div class="box1">
+                    <img src="../browser-extensions-manager-ui-main/assets/images/logo-json-wizard.svg" alt="">
+                    <div>
+                        <p class="CountainerText">JSONWizard</p>
+                        <p class="CountainerParagraph">Formats,validates,and prettifies JSON responses in-browser.
+                        </p>
+                    </div>
+                </div>
+                <div class="box2">
+                    <button class="BoxBtn" onclick="deleteit(this)">Remove</button>
+                    <input type="checkbox" class="checkme" onclick="checking(this)">
+                </div>
+            </div>
+            <!--5-->
+            <div class="container">
+                <div class="box1">
+                    <img src="../browser-extensions-manager-ui-main/assets/images/logo-tab-master-pro.svg" alt="">
+                    <div>
+                        <p class="CountainerText">TabMaster Pro</p>
+                        <p class="CountainerParagraph">Organizes browser tabs into groups and sessions.
+                        </p>
+                    </div>
+                </div>
+                <div class="box2">
+                    <button class="BoxBtn" onclick="deleteit(this)">Remove</button>
+                    <input type="checkbox" class="checkme" onclick="checking(this)">
+                </div>
+            </div>
+            <!--6-->
+            <div class="container">
+                <div class="box1">
+                    <img src="../browser-extensions-manager-ui-main/assets/images/logo-viewport-buddy.svg" alt="">
+                    <div>
+                        <p class="CountainerText">ViewportBuddy</p>
+                        <p class="CountainerParagraph">Simulates various screen resolutions directly within the browser.
+                        </p>
+                    </div>
+                </div>
+                <div class="box2">
+                    <button class="BoxBtn" onclick="deleteit(this)">Remove</button>
+                    <input type="checkbox" class="checkme" onclick="checking(this)">
+                </div>
+            </div>
+            <!--7-->
+            <div class="container">
+                <div class="box1">
+                    <img src="../browser-extensions-manager-ui-main/assets/images/logo-markup-notes.svg" alt="">
+                    <div>
+                        <p class="CountainerText">Markup Notes</p>
+                        <p class="CountainerParagraph">Enables annotation and notes directly onto webpages for collaborative debugging.
+                        </p>
+                    </div>
+                </div>
+                <div class="box2">
+                    <button class="BoxBtn" onclick="deleteit(this)">Remove</button>
+                    <input type="checkbox" class="checkme" onclick="checking(this)">
+                </div>
+            </div>
+            <!--8-->
+            <div class="container">
+                <div class="box1">
+                    <img src="../browser-extensions-manager-ui-main/assets/images/logo-grid-guides.svg" alt="">
+                    <div>
+                        <p class="CountainerText">GridGuides</p>
+                        <p class="CountainerParagraph">Overlay customizable grids and alignment guides on any webpage.
+                        </p>
+                    </div>
+                </div>
+                <div class="box2">
+                    <button class="BoxBtn" onclick="deleteit(this)">Remove</button>
+                    <input type="checkbox" class="checkme" onclick="checking(this)">
+                </div>
+            </div>
+            <!--9-->
+            <div class="container">
+                <div class="box1">
+                    <img src="../browser-extensions-manager-ui-main/assets/images/logo-palette-picker.svg" alt="">
+                    <div>
+                        <p class="CountainerText">Palette Picker</p>
+                        <p class="CountainerParagraph">Instantly extracts color palettes from any webpage.
+                        </p>
+                    </div>
+                </div>
+                <div class="box2">
+                    <button class="BoxBtn" onclick="deleteit(this)">Remove</button>
+                    <input type="checkbox" class="checkme" onclick="checking(this)">
+                </div>
+            </div>
+            <!--10-->
+            <div class="container">
+                <div class="box1">
+                    <img src="../browser-extensions-manager-ui-main/assets/images/logo-link-checker.svg" alt="">
+                    <div>
+                        <p class="CountainerText">LinkChecker</p>
+                        <p class="CountainerParagraph">Scans and highlights broken links on any page.
+                        </p>
+                    </div>
+                </div>
+                <div class="box2">
+                    <button class="BoxBtn" onclick="deleteit(this)">Remove</button>
+                    <input type="checkbox" class="checkme" onclick="checking(this)">
+                </div>
+            </div>
+            <!---11-->
+            <div class="container">
+                <div class="box1">
+                    <img src="../browser-extensions-manager-ui-main/assets/images/logo-dom-snapshot.svg" alt="">
+                    <div>
+                        <p class="CountainerText">DOM Snapshot</p>
+                        <p class="CountainerParagraph">Capture and export DOM structures quickly.
+                        </p>
+                    </div>
+                </div>
+                <div class="box2">
+                    <button class="BoxBtn" onclick="deleteit(this)">Remove</button>
+                    <input type="checkbox" class="checkme" onclick="checking(this)">
+                </div>
+            </div>
+            <!--12-->
+            <div class="container">
+                <div class="box1">
+                    <img src="../browser-extensions-manager-ui-main/assets/images/logo-console-plus.svg" alt="">
+                    <div>
+                        <p class="CountainerText">ConsolePlus</p>
+                        <p class="CountainerParagraph">Enhanced developer console with advanced filtering and logging.
+                        </p>
+                    </div>
+                </div>
+                <div class="box2">
+                    <button class="BoxBtn" onclick="deleteit(this)">Remove</button>
+                    <input type="checkbox" class="checkme" onclick="checking(this)">
+                </div>
+            </div>
+            
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

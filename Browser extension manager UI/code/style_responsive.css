@@ -1,0 +1,12 @@
+@media (min-width : 375px) and (max-width : 380px) {
+    .Parent
+    {
+        flex-direction: column;
+    }
+    .Blocks{
+        height: 100%;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(12,210px);
+        justify-content: center;
+    }
+}
