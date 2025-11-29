@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <main id="main">
+        <div class="FirstChild">
+            <h1>Stay update!</h1>
+            <p>Join 60,000 product manager receiving monthly updates on:</p>
+            <div class="Child">
+                <img src="../newsletter-sign-up-with-success-message-main/assets/images/icon-list.svg" alt="">
+                <p>Product discovery and building what matters</p>
+            </div>
+            <div class="Child">
+                <img src="../newsletter-sign-up-with-success-message-main/assets/images/icon-list.svg" alt="">
+                <p>Measuring to ensure updates are a success</p>
+            </div>
+            <div class="Child">
+                <img src="../newsletter-sign-up-with-success-message-main/assets/images/icon-list.svg" alt="">
+                <p>And much more!</p>
+            </div>
+            <form action="">
+                <label for="">Email address</label>
+                <input type="email" placeholder="email@company.com" id="email">
+            </form>
+            <button onclick="openmodel()">Subscribe to monthly newsletter</button>
+        </div>
+        <div class="SecondChild">
+            <img src="../newsletter-sign-up-with-success-message-main/assets/images/illustration-sign-up-desktop.svg"
+                alt="" id="first">
+            <img src="../newsletter-sign-up-with-success-message-main/assets/images/illustration-sign-up-mobile.svg" alt="" id="second">
+        </div>
+    </main>
+    <section>
+        <div class="popup">
+            <img src="../newsletter-sign-up-with-success-message-main/assets/images/icon-success.svg" alt="">
+            <h1>thanks for subscribing!</h1>
+            <p>A confirmation email has been sent to <span id="get">.</span>Please open it and click
+                the
+                button inside to confirm your subscription.</p>
+            <button onclick="closemodal()">Dismiss message</button>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>

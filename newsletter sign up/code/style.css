@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+body{
+    height: 100vh;
+    background: hsl(234, 29%, 20%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+main{
+    width: 50vw;
+    height: 75vh;
+    background: white;
+    border-radius: 15px;
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+.FirstChild{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+
+}
+h1{
+    color: hsl(235, 18%, 26%);
+    font-size: 50px;
+}
+.Child{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+.Child p {
+    font-size: 14px;
+}
+label{
+    font-size: 10px;
+    font-weight: 800;
+}
+input{
+    border: 1px solid grey;
+    padding: 12px;
+    width: 100%;
+    border-radius: 12px;
+}
+input:focus{
+   outline: none;
+   border-color: blueviolet;
+}
+button{
+    background: hsl(234, 29%, 20%);
+    color: white;
+    font-weight: 700;
+    padding: 12px;
+    border-radius: 12px;
+    width: 100%;
+    cursor: pointer;
+}
+button:hover{
+    background: linear-gradient(90deg, #FF5B60, orange);
+    border-color: transparent;
+}
+
+.SecondChild img{
+    width: 100%;
+    height: 100%;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.popup{
+    display: flex;
+    width: 50vh;
+    height: 60vh;
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+    position: fixed;
+    z-index: -1;
+    opacity: 0;
+}
+.popup.open{
+    z-index: 999;
+    opacity: 1;
+    transition: all 0.7s ease-in-out;
+}
+.popup img{
+    width: 50px;
+    height: 50px;
+    align-self: flex-start;
+}
+.popup p{
+    font-size: 13px;
+}
+span{
+    font-weight: 700;
+}
+#second{
+    display: none;
+}
