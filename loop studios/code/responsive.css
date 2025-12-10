@@ -1,0 +1,135 @@
+@media (min-width:375px) and (max-width:380px) {
+    header {
+        background-image: url(../loopstudios-landing-page-main/images/mobile/image-hero.jpg);
+    }
+
+    #displayed {
+        display: none;
+    }
+
+    .FlowtingText {
+        width: 100%;
+    }
+
+    .FlowtingText h1 {
+        font-size: 35px;
+    }
+
+    ol {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+
+    }
+
+    #NoneDisplaye {
+        display: block;
+        width: 90%;
+    }
+
+    .portraits {
+        grid-template-columns: repeat(1, 100%);
+    }
+
+    .FooterChild,
+    .FooterBox {
+        flex-direction: column;
+    }
+    #nav2{
+        align-items: center;
+    }
+    #nav2 ol {
+        flex-direction: column;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .container h2 {
+        font-size: 25px;
+        align-self: center;
+        text-align: center;
+    }
+
+    .container p {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .MainParent {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .box h2 {
+        font-size: 22px;
+    }
+
+    .wrapper {
+        display: grid;
+        place-items: center;
+    }
+
+    .wrapper p {
+        font-size: 18px;
+    }
+
+
+    .box {
+        justify-content: center;
+    }
+
+    .box button {
+        display: none;
+    }
+
+    .box2 {
+        display: block;
+        border: 2px solid black;
+        margin-top: 18px;
+    }
+
+    .box2 button {
+        display: block;
+        background-color: transparent;
+        border: 1px solid transparent;
+        padding: 7px 35px;
+        cursor: pointer;
+    }
+
+    footer {
+        height: 100%;
+        padding: 45px 0;
+    }
+
+    footer div {
+        display: flex;
+        justify-content: center;
+    }
+
+    .SocialMedia {
+        align-self: center;
+    }
+
+    .nav2_countainer {
+        margin-bottom: 50px;
+    }
+
+    #hidden_ol {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    #SidebarIcon {
+        display: block;
+        filter: brightness(0) invert(1);
+    }
+    .Parent nav ol{
+        display: none;
+    }
+}
